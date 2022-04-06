@@ -2,12 +2,42 @@ body {
     font-family: Arial;
 }
 
+#main-wrapper {
+    background-image: url("assets/slimy-bricks.png");
+    background-repeat: repeat;
+    background-size: 64px auto;
+    image-rendering: pixelated;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #inner-column {
     max-width: 960px;
     color: #ffffff;
     background-color: #586b8a;
     position: relative;
     font-size: 16px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 div {
